@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+<!-- Load EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- Load Your JavaScript File -->
+<script src="contact.js" defer></script>
+    
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2 class="gradient-text">Contact Me</h2>
+            <p>Feel free to reach out for any inquiries or collaborations.</p>
+            <div class="info-box" style="--i:1;">
+                <i class='bx bxs-contact'></i>
+                <span>+91 9025576183</span>
+            </div>
+            <div class="info-box" style="--i:2;">
+                <i class='bx bxs-envelope'></i>
+                <span>krishnahari90255@gmail.com</span>
+            </div>
+            <div class="info-box" style="--i:3;">
+                <i class='bx bx-current-location' ></i>
+                <span>Kallakurichi,Tamil Nadu
+                </span>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form id="contactForm">
+                <div class="input-box">
+                    
+                    <input type="text" placeholder="Name" id="name" required>
+                    
+                </div>
+                <div class="input-box">
+                   
+                    <input type="email" placeholder="Email"  id="email" required>
+                    
+                </div>
+                <div class="input-box">
+                    
+                    <textarea id="message" placeholder="Start conversation" required></textarea>
+                   
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    
+        
+</body>
+</html>
