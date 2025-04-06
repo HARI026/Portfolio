@@ -1,0 +1,320 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(180deg, #000, #0000009c);
+    color: #fff;
+    background-image: url(./assets/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(20px);
+    background-position: center;
+    margin: 0;
+
+}
+
+
+h2{
+    margin-left:10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff7200; 
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+ul,li{
+    padding: 2px;
+    margin: 10px;
+    margin-left: 100px;
+    
+}
+
+ol,li{
+    padding: 2px;
+    margin: 10px;
+    margin-left: 100px;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff7200;
+    margin-left: 550px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+   
+}
+
+.btn:hover{
+    background-color: #ff7200;
+    color: #000;
+    box-shadow: 0 0 20px #ff7200;
+}
+
+.icons{
+    background: transparent;
+    padding: auto;
+    image-resolution: 1080p;
+    margin-left: 5px;
+   
+    
+}
+
+.icons ul {
+    list-style: none;
+    display: flex;
+}
+
+.icons li {
+    margin: 20px;
+}
+
+
+
+.scene {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-left: 520px;
+    
+}
+
+.cylinder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotateCylinder 6s linear infinite;
+}
+
+
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotateLogo 2s linear infinite;
+    border-radius: 10%;
+    height: 90%;
+    border-width: 0.2cap;
+    border-color: #0ef;
+    box-shadow: 2px 0px 2px 0px #0ef;
+    border-style:solid;
+    
+    /* Positioning the logos in a circular manner */
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(100px);
+}
+
+.logo2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotateLogo 2s linear infinite;
+    border-radius: 10%;
+    height: 90%;
+    border-width: 0.2cap;
+    border-color: #0ef;
+    box-shadow: 2px 0px 2px 0px #0ef;
+    border-style:solid;
+    
+    /* Positioning the logos in a circular manner */
+    transform: rotateY(calc(var(--i) * 125deg)) translateZ(-100px);
+}
+
+@keyframes rotateCylinder {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+
+
+.main {
+    margin-left: 50px;
+    padding: 0;
+    align-items: center;
+}
+
+.img{
+    
+    display: flex;
+    margin-left: 535px;
+    height: 250px;
+    width: 195px;
+    border-radius: 0px;
+
+    
+    
+}
+
+.name{
+    text-align: center;
+    
+}
+
+h3{
+
+    font-size: 20px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+h5{
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;         /* Removes underline */
+    color: #fff;                /* Custom color */
+    transition: color 0.3s ease;   /* Smooth color change on hover */
+  }
+  
+  .link:hover {
+    color: #0ef;                /* Color on hover */
+    text-decoration: underline;    /* Optional hover underline */
+  }
+  
+
+
+/* Mobile devices (up to 600px) */
+@media screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 20px;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    ul, ol, li {
+        margin-left: 20px;
+    }
+
+    .btn {
+        margin-left: 0;
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .logo1 {
+        width: 100%;
+        margin-left: 0;
+        font-size: 180%;
+        top: 20px;
+    }
+
+    .scene {
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+    }
+
+    .img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: auto;
+    }
+
+    .icons ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons li {
+        margin: 10px;
+    }
+}
+
+/* Tablets (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .btn {
+        margin-left: 35%;
+        width: 30%;
+    }
+
+    .scene {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo1 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    ul, ol, li {
+        margin-left: 40px;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes rotateLogos {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  /* Fade In Animation for Sections */
+  .content > div {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+  
+  /* Delay for a sequential reveal effect */
+  .content > div:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .content > div:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .content > div:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .content > div:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  .content > div:nth-child(6) {
+    animation-delay: 1s;
+  }
+  
+  
+  
