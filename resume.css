@@ -8,7 +8,8 @@ body{
     background-repeat: no-repeat;
     backdrop-filter: blur(20px);
     background-position: center;
-    margin: 0;
+    background-attachment: fixed;
+    animation: bgReveal 2s ease-out forwards;
 
 }
 
@@ -21,6 +22,10 @@ h2{
     padding: 20px;
     text-align: center;
     
+}
+
+i{
+    font-size: 20px;
 }
 
 
@@ -317,4 +322,16 @@ h5{
   }
   
   
-  
+  @keyframes bgReveal {
+    0% {
+        background-size: 150%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        background-size: 100%;
+        opacity: 1;
+    }
+}
