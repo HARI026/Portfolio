@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+    color: #1f2937;
+    padding: 2rem;
+  }
+  
+  .dark {
+    background: linear-gradient(to bottom right, #111827, #1f2937);
+    color: #f9fafb;
+  }
+  
+  .main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  
+  .container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .dark .card {
+    background-color: #1f2937;
+    color: #f9fafb;
+  }
+  
+  .card:hover {
+    transform: rotateY(5deg) rotateX(5deg) scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .icon.blue { color: #3b82f6; }
+  .icon.purple { color: #8b5cf6; }
+  .icon.green { color: #10b981; }
+  .icon.yellow { color: #facc15; }
+  .icon.pink { color: #ec4899; }
+  .icon.orange { color: #f97316; }
+  
