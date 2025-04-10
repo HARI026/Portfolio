@@ -233,4 +233,34 @@ body {
 
 
 
+/* Add to the bottom of contact.css */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+        background-attachment: fixed;
+    }
 
+    .contact-section {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .info-box {
+        margin-left: 10%;
+        justify-content: center;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .input-box input, 
+    .input-box textarea {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

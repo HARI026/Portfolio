@@ -60,3 +60,28 @@ body {
   .icon.pink { color: #ec4899; }
   .icon.orange { color: #f97316; }
   
+
+  /* Add to the bottom of skills.css */
+@media (max-width: 600px) {
+  .main-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .container {
+      grid-template-columns: 1fr;
+      padding: 0 15px;
+  }
+
+  .card {
+      padding: 1rem;
+  }
+
+  .card h2 {
+      font-size: 1.2rem;
+  }
+
+  .card p {
+      font-size: 0.9rem;
+  }
+}
