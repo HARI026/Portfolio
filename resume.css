@@ -233,8 +233,10 @@ h5{
     .img {
         margin-left: auto;
         margin-right: auto;
-        width: 150px;
-        height: auto;
+        height: 250px;
+        width: 250px;
+        max-width: 1200px;
+    
     }
 
     .icons ul {
@@ -333,3 +335,5 @@ h5{
         opacity: 1;
     }
 }
+
+
